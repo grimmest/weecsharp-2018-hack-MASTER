@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-#test
 
 import json
 import socket
