@@ -1,0 +1,43 @@
+While true:
+	receive message (fov scan)
+	while no enemies in enemies_in_fov:
+		move randomly or in a circle or a corner or something
+		receive message again
+	(assuming enemies are present now)
+	read in enemies from message
+	caculate which is nearest
+	choose this as target
+	while target in fov:
+		turn turret to target
+		shoot at target
+		turn to direction of target
+		move forward
+	#extra
+	while target killed:
+		if tank in one half:
+			go to the goal on this side
+		else:
+			go to other goal
+	while health < some number:
+		receive message (fov scan)
+		while no health packs in fov:
+			turn 90 degrees
+			receive message again
+		choose this as target
+		turn in direction of health pack
+		while true: 	
+			move in direction of health pack
+	
+	while ammo < some number:
+		receive message (fov scan)
+		while no ammo packs in fov:
+			turn 90 degrees
+			receive message again
+		choose this as target
+		turn in direction of health pack
+		while true: 	
+			move in direction of health pack
+	while snitch on pitch:
+		find heading of snitch
+		turn to headin of snitch
+		move forward		
